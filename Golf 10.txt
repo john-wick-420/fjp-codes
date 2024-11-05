@@ -1,0 +1,86 @@
+import java.applet.Applet;
+import java.awt.Graphics;
+import java.awt.Color;
+
+public class AppletDemo extends Applet {
+
+    public void paint(Graphics g) {
+        // Set background color
+        setBackground(Color.WHITE);
+
+        // Draw an outlined blue oval
+        g.setColor(Color.BLUE);
+        g.drawOval(50, 50, 100, 50);
+
+        // Draw a filled cyan oval
+        g.setColor(Color.CYAN);
+        g.fillOval(200, 50, 100, 50);
+
+        // Draw an outlined green rectangle
+        g.setColor(Color.GREEN);
+        g.drawRect(50, 150, 100, 50);
+
+        // Draw a filled magenta rectangle
+        g.setColor(Color.MAGENTA);
+        g.fillRect(200, 150, 100, 50);
+
+        // Draw an outlined red circle (oval with equal width and height)
+        g.setColor(Color.RED);
+        g.drawOval(50, 250, 50, 50);
+        // Draw a black line
+        g.setColor(Color.BLACK);
+        g.drawLine(50, 350, 200, 350);
+
+        // Draw an orange arc
+        g.setColor(Color.ORANGE);
+        g.drawArc(50, 400, 100, 100, 0, 180);
+
+        // Draw a filled yellow arc
+        g.setColor(Color.YELLOW);
+        g.fillArc(200, 400, 100, 100, 0, 90);
+
+        // Draw a black string (text)
+        g.setColor(Color.BLACK);
+        g.drawString("Applet Demo with Shapes!", 50, 500);
+    }
+}
+Output:
+The output of this code will display the following:
+1.	A blue outlined oval.
+2.	A cyan filled oval.
+3.	A green outlined rectangle.
+4.	A magenta filled rectangle.
+5.	A red outlined circle.
+6.	A black line.
+7.	An orange arc.
+8.	A yellow filled arc.
+9.	A text string: "Applet Demo with Shapes!" written in black.
+
+
+
+
+///
+Set Up Eclipse for Java 8:
+
+If you’re using Java 8, ensure that Eclipse is set to use a Java 8 JRE.
+Go to Window > Preferences > Java > Installed JREs and make sure Java 8 is selected.
+Also, under Java > Compiler, set the Compiler compliance level to 1.8.
+Create a New Java Project:
+
+Go to File > New > Java Project.
+Name the project (e.g., AppletDemo).
+Select Java 8 as the execution environment if available.
+Create a New Java Class:
+
+Right-click on the src folder in your project.
+Select New > Class and name it AppletDemo.
+Uncheck public static void main(String[] args) since applets don’t use a main method.
+Click Finish.
+Paste the Code:
+
+Copy and paste the code you provided into AppletDemo.java.
+Run the Applet Using Applet Viewer (for Java 8):
+
+Right-click on AppletDemo.java in the Project Explorer.
+Go to Run As > Java Applet. This will launch the applet viewer, which is integrated into Eclipse.
+///

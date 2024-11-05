@@ -1,0 +1,28 @@
+
+public class Rectangle {
+	int length;
+	int width;
+	String color;
+	
+	Rectangle(int x,int y,String z){
+		length = x;
+		width = y;
+		color = z;
+	}
+	int rectArea() {
+		return width*length;
+	}
+	public static void main(String args[]) {
+		Rectangle rect1 = new Rectangle(4,3,"red");
+		Rectangle rect2 = new Rectangle(4, 3, "red");
+		
+		if(rect1.rectArea() == rect2.rectArea()&& rect1.color.equals(rect2.color)) {
+			System.out.println("Matching Rectangles");
+			
+		}else {
+			System.out.println("Non-Matching Rectangle ");
+			
+		}
+		
+	}
+}

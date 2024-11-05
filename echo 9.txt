@@ -1,0 +1,56 @@
+package exception;
+
+public class Exceptionhandling {
+    public static void main(String[] args) {
+        int a = 4; 
+        int b = 0; 
+        int arr[] = {1, 2, 3, 4, 5}; 
+        
+        try { 
+            int c = a / b; // This will throw ArithmeticException
+            System.out.println("c = " + c); 
+            arr[6] = 10; // This will throw ArrayIndexOutOfBoundsException
+        } catch (ArithmeticException e) { 
+            System.out.println("Arithmetic Exception Handling:");
+            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException f) { 
+            System.out.println("Array Index Out Of Bounds Exception:");
+            f.printStackTrace();
+        } finally { 
+            System.out.println("Finally Block Executed:");
+        } 
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
+///
+Create a New Java Project:
+
+In Eclipse, go to File > New > Java Project.
+Name the project Exception.
+Create a New Package:
+
+Right-click on the src folder in your project.
+Select New > Package and name it exception.
+Create a New Java Class:
+
+Right-click on the exception package.
+Select New > Class and name it ExceptionHandling.
+Check public static void main(String[] args) if available, to add the main method automatically.
+Paste the Code:
+
+Copy and paste the code above into ExceptionHandling.java.
+Run the Program:
+
+Right-click on ExceptionHandling.java in the Project Explorer.
+Select Run As > Java Application.
+///

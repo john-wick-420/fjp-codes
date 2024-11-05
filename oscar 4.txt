@@ -1,0 +1,31 @@
+public class Adder {
+	double a, b, c;
+	Adder(double a, double b) {
+		this.a = a; 
+		this.b = b; 
+	}
+	Adder(double a, double b, double c) {
+		this.a = a; 
+		this.b = b; 
+		this.c = c; 
+	}
+	public double add(double a, double b) {
+		System.out.println("Calling method add() with two parameters.");
+		return a + b; 
+	}
+	public double add(double a, double b, double c) {
+		System.out.println("Calling method add() with three parameters.");
+		return a + b + c; 
+	}
+	public static void main(String args[]) {
+		Adder obj1 = new Adder(3.3, 2.1); 
+		Adder obj2 = new Adder(3.3, 2.1, 4.3);
+		System.out.println("Calling constructor Adder() with two parameters." + "\na = " + obj1.a + "\nb = " + obj1.b + "\nc = " + obj1.c);
+		double result1 = obj1.add(obj1.a, obj1.b);
+		System.out.println("Result of addition (two params): " + result1);
+		System.out.println("\nCalling constructor Adder() with three parameters." + "\na = " + obj2.a + "\nb = " + obj2.b + "\nc = " + obj2.c);
+		double result2 = obj2.add(obj2.a, obj2.b, obj2.c);
+		System.out.println("Result of addition (three params): " + result2);
+	}
+}
+

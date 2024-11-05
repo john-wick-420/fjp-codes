@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Simple Calculator");
+		System.out.println("Choose an operation");
+		System.out.println("1 add ");
+		System.out.println("2 Subtract ");
+		System.out.println("3. Multiply");
+		System.out.println("4. Divide ");
+		System.out.println("5. Factorial");
+		System.out.println("Enter your Choice(1-5) :");
+		int choice = sc.nextInt();
+		switch(choice) {
+		case 1:
+			System.out.println("Enter Two Numbers : ");
+			double add1 = sc.nextDouble();
+			double add2 = sc.nextDouble();
+			System.out.println("Result : "+(add1+add2));
+			break;
+		case 2:
+			System.out.println("Enter Two Numbers : ");
+			double sub1 = sc.nextDouble();
+			double sub2 = sc.nextDouble();
+			System.out.println("Result : "+(sub1-sub2));
+			break;
+		case 3:
+			System.out.println("Enter Two Numbers : ");
+			double mul1 = sc.nextDouble();
+			double mul2 = sc.nextDouble();
+			System.out.println("Result : "+(mul1*mul2));
+			break;
+		case 4:
+			System.out.println("Enter Two Numbers : ");
+			double div1 = sc.nextDouble();
+			double div2 = sc.nextDouble();
+			System.out.println("Result : "+(div1/div2));
+			break;
+		case 5:
+			System.out.println("Enter a Numbers : ");
+			int num = sc.nextInt();
+			int fact = 1;
+			for(int i= 1;i<=num;i++) {
+				fact = fact*i;
+				
+			}
+			System.out.println("Factorial : "+fact);
+			break;
+		default:
+			
+			System.out.println("Invalid Choice. ");
+			break;
+		}
+		sc.close();
+	
+
+	}
+
+}

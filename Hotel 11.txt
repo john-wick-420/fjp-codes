@@ -1,0 +1,32 @@
+import java.io.*;
+
+public class JavaBasics {
+    public static void main(String[] args) {
+        try {
+            // Create FileWriter and BufferedWriter to write to output.txt
+            FileWriter fw = new FileWriter("output.txt");
+            BufferedWriter bw = new BufferedWriter(fw);
+
+            // Create FileReader and BufferedReader to read from input.txt
+            FileReader fr = new FileReader("input.txt");
+            BufferedReader br = new BufferedReader(fr);
+
+            String line;
+
+            // Read each line from input.txt and write to output.txt
+            while ((line = br.readLine()) != null) {
+                bw.write(line);
+                bw.newLine();
+            }
+
+            // Close resources
+            br.close();
+            bw.close();
+
+            System.out.println("Data copied from input.txt to output.txt successfully.");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

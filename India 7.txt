@@ -1,0 +1,114 @@
+package cricket;
+class Player {
+    String name; 
+    int age, rank; 
+
+    Player(String name, int age, int rank) {
+        this.name = name; 
+        this.age = age; 
+        this.rank = rank; 
+    }
+
+    void Display() {
+        System.out.println("Name: " + name + "\nAge: " + age + "\nRank: " + rank);
+    }
+}
+
+class CricketPlayer extends Player {
+    String game, role; 
+
+    CricketPlayer(String name, int age, int rank, String game, String role) {
+        super(name, age, rank); 
+        this.game = game; 
+        this.role = role; 
+    }
+
+    void Display() {
+        System.out.println("Cricket Player Details"); 
+        super.Display(); 
+        System.out.println("Game: " + game + "\nRole: " + role);
+    }
+}
+
+class FootballPlayer extends Player {
+    String game, place; 
+
+    FootballPlayer(String name, int age, int rank, String game, String place) {
+        super(name, age, rank); 
+        this.game = game; 
+        this.place = place; 
+    }
+
+    void Display() {
+        System.out.println("Football Player Details"); 
+        super.Display(); 
+        System.out.println("Game: " + game + "\nPlace: " + place);
+    }
+}
+
+class HockeyPlayer extends Player {
+    String game, position; 
+
+    HockeyPlayer(String name, int age, int rank, String game, String position) {
+        super(name, age, rank); 
+        this.game = game; 
+        this.position = position; 
+    }
+
+    void Display() {
+        System.out.println("Hockey Player Details"); 
+        super.Display(); 
+        System.out.println("Game: " + game + "\nPosition: " + position);
+    }
+}
+
+public class Inheritance {
+    public static void main(String[] args) {
+        CricketPlayer CP = new CricketPlayer("Virat", 25, 1, "Cricket", "Batsman"); 
+        FootballPlayer FP = new FootballPlayer("Ronaldo", 28, 2, "Football", "Forward"); 
+        HockeyPlayer HP = new HockeyPlayer("Manpreet", 27, 3, "Hockey", "Attacker"); 
+        
+        CP.Display(); 
+        FP.Display(); 
+        HP.Display();
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///
+Create a New Java Project:
+
+Open Eclipse.
+Go to File > New > Java Project.
+Enter a project name and click Finish.
+Create a New Java Class:
+
+Right-click on the src folder of your project.
+Select New > Class.
+Name the class Inheritance (make sure to check "public static void main(String[] args)").
+Copy and Paste the Code:
+
+Copy the provided code and paste it into the new class file.
+Run the Program:
+
+Save the file (Ctrl + S).
+Right-click on the file in the Package Explorer and select Run As > Java Application.
+///
